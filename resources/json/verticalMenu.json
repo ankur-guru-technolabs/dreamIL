@@ -1,0 +1,252 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Dashboard",
+      "i18n": "Dashboard", 
+      "class": "waves-effect waves-cyan",
+      "icon": "dashboard",
+      "slug": "dashboard"
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Users",
+      "i18n": "Users",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "user",
+      "icon": "person",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "user/create",
+          "name": "Add User",
+          "i18n": "Add User",
+          "slug": "create"
+        },
+        {
+          "url": "user",
+          "name": "List",
+          "i18n": "List",
+          "slug": "user"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Categories",
+      "i18n": "Categories",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "passion",
+      "icon": "list",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "categories/create",
+          "name": "Add Category",
+          "i18n": "Add Category",
+          "slug": "categories/create"
+        },
+        {
+          "url": "categories",
+          "name": "List",
+          "i18n": "List",
+          "slug": "categories"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Profile Questions",
+      "i18n": "Profile Questions",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "question",
+      "icon": "list",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "question/create",
+          "name": "Add Question",
+          "i18n": "Add Question",
+          "slug": "question/create"
+        },
+        {
+          "url": "question",
+          "name": "List",
+          "i18n": "List",
+          "slug": "question"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "General Questions",
+      "i18n": "General Questions",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "question",
+      "icon": "question_answer",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "general_question/create",
+          "name": "Add Question",
+          "i18n": "Add Question",
+          "slug": "question/create"
+        },
+        {
+          "url": "general_question",
+          "name": "List",
+          "i18n": "List",
+          "slug": "question"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Advertise Category",
+      "i18n": "Advertise Category",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "match_profile",
+      "icon": "list",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "advertise_category/create",
+          "name": "Add Category",
+          "i18n": "Add Category",
+          "slug": "advertise_category/create"
+        },
+        {
+          "url": "advertise_category",
+          "name": "List",
+          "i18n": "List",
+          "slug": "advertise_category"
+        }
+      ]
+    },
+    {
+      "url": "advertisement",
+      "name": "Advertisement",
+      "i18n": "Advertisement", 
+      "class": "waves-effect waves-cyan",
+      "icon": "list",
+      "slug": "advertisement"
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Article Category",
+      "i18n": "Article Category",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "match_profile",
+      "icon": "list",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "artical_category/create",
+          "name": "Add Category",
+          "i18n": "Add Category",
+          "slug": "artical_category/create"
+        },
+        {
+          "url": "artical_category",
+          "name": "List",
+          "i18n": "List",
+          "slug": "artical_category"
+        }
+      ]
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Article",
+      "i18n": "Article",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "match_profile",
+      "icon": "list",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "artical/create",
+          "name": "Add Article",
+          "i18n": "Add Article",
+          "slug": "Add create"
+        },
+        {
+          "url": "artical",
+          "name": "List",
+          "i18n": "List",
+          "slug": "artical"
+        }
+      ]
+    },
+    {
+      "url": "subscription_plan",
+      "name": "Subscription Plan",
+      "i18n": "Subscription Plan", 
+      "class": "waves-effect waves-cyan",
+      "icon": "subscriptions",
+      "slug": "subscription_orders"
+    },
+    {
+      "url": "subscription_orders",
+      "name": "Orders",
+      "i18n": "Orders", 
+      "class": "waves-effect waves-cyan",
+      "icon": "reorder",
+      "slug": "subscription_orders"
+    },
+    {
+      "url": "javascript:void(0)",
+      "name": "Static Pages",
+      "i18n": "Static Pages",
+      "class": "collapsible-header waves-effect waves-cyan",
+      "slug": "pages",
+      "icon": "pages",
+      "tag": "2",
+      "tagcustom": "badge pill purple float-right mr-10",
+      "submenu": [
+        {
+          "url": "privacy_policy",
+          "name": "Privacy Policy",
+          "i18n": "Privacy Policy",
+          "slug": "privacy_policy"
+        },
+        {
+          "url": "terms_and_conditions",
+          "name": "Terms And Conditions",
+          "i18n": "Terms And Conditions",
+          "slug": "terms_and_conditions"
+        }
+      ]
+    },
+    {
+      "url": "push_notification",
+      "name": "Push Notification",
+      "i18n": "Push Notification", 
+      "class": "waves-effect waves-cyan",
+      "icon": "notifications",
+      "slug": "app-calendar"
+    },
+    {
+      "url": "get_notification",
+      "name": "Notification List",
+      "i18n": "Notification List", 
+      "class": "waves-effect waves-cyan",
+      "icon": "notifications",
+      "slug": "app-calendar"
+    },
+    {
+      "url": "settings",
+      "name": "Settings",
+      "i18n": "Settings",
+      "class": "waves-effect waves-cyan",
+      "icon": "settings",
+      "slug": "app-calendar"
+    }
+  ]
+}

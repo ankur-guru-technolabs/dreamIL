@@ -1,0 +1,19 @@
+[29-Apr-2022 14:09:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/customer/www/dreamiladmin.online/public_html/server.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/dreamiladmin.online/public_html/server.php on line 9
+[30-Apr-2022 05:50:27 UTC] PHP Parse error:  syntax error, unexpected '/', expecting end of file in /home/customer/www/dreamiladmin.online/public_html/server.php on line 9
+[30-Apr-2022 05:51:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/customer/www/dreamiladmin.online/public_html/server.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/dreamiladmin.online/public_html/server.php on line 9
+[30-Apr-2022 05:51:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/customer/www/dreamiladmin.online/public_html/server.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/dreamiladmin.online/public_html/server.php on line 9
+[30-Apr-2022 05:52:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/customer/www/dreamiladmin.online/public_html/server.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/dreamiladmin.online/public_html/server.php on line 9
+[30-Apr-2022 07:14:37 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 7.2.34. in /home/customer/www/dreamiladmin.online/public_html/vendor/composer/platform_check.php on line 24
+[30-Apr-2022 07:14:40 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 7.2.34. in /home/customer/www/dreamiladmin.online/public_html/vendor/composer/platform_check.php on line 24
