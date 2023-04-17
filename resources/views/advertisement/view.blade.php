@@ -30,7 +30,7 @@
               </div>
               
               <div @if($advertisement->status != 'Approved') style="display:none" @endif class="input-field col m6 s12 hide_date_text">
-                <input type="text" value="{{$advertisement->start_date}}" name="start_date" class="datepicker start_date" id="start_date" data-error=".errorTxt1">
+                <input type="text" value="{{ date('M d, Y', strtotime(str_replace('/', '-', $advertisement->start_date))) }}" name="start_date" class="datepicker start_date" id="start_date" data-error=".errorTxt1">
                 <label for="dob" class="active">Start Date</label>
                 @if ($errors->has('start_date'))
                   <small class="errorTxt1" style="color: red;">{{ $errors->first('start_date') }}</small>
@@ -39,7 +39,7 @@
             </div>
             <div @if($advertisement->status != 'Approved') style="display:none" @endif class="row hide_date_text">
               <div class="input-field col m6 s12">
-                <input type="text" value="{{$advertisement->end_date}}" name="end_date" class="datepicker end_date" id="dob" data-error=".errorTxt1">
+                <input type="text" value="{{ date('M d, Y', strtotime(str_replace('/', '-', $advertisement->end_date))) }}" name="end_date" class="datepicker end_date" id="dob" data-error=".errorTxt1">
                 <label for="dob" class="active">End Date</label>
                 @if ($errors->has('end_date'))
                   <small class="errorTxt1" style="color: red;">{{ $errors->first('end_date') }}</small>

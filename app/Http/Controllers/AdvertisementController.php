@@ -47,6 +47,14 @@ class AdvertisementController extends Controller
 			$params['start_date'] = '';
 			$params['end_date']   = '';
 		}else{
+			
+			$date = DateTime::createFromFormat('M d, Y', $request->start_date);
+            $request['start_date'] = $date->format('d/m/Y');
+            $params['start_date'] = $request['start_date'];
+    	    $end_date = DateTime::createFromFormat('M d, Y', $request->end_date);
+            $request['end_date'] = $end_date->format('d/m/Y');
+            $params['end_date'] = $request['end_date'];
+
 			$messages = array(
             	'start_date.required' => 'Start date field is required.',
             	'end_date.required' => 'End date field is required.',
