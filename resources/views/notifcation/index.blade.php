@@ -47,6 +47,7 @@
                     <th>Message</th>
                     <th>Created At</th>
                     <th>Updated At</th>
+                    <th>Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -58,6 +59,8 @@
                     <td>{{$noti->message}}</td>
                     <td>{{$noti->created_at}}</td>
                     <td>{{$noti->updated_at}}</td>
+                    <td><a onclick="return confirm('Are you sure you want delete this?')" href="#"><i class="material-icons">delete</i></a>
+                    </td>
                   </tr>
                   @endforeach
                 </tbody>

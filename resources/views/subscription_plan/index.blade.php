@@ -37,6 +37,11 @@
                     </button>
                   </div>
             @endif
+            <a href="{{url('')}}/subscription_plan/create">
+                <button class="btn indigo waves-effect waves-light right mb-3" type="submit" name="action">
+                    Add new plan
+                </button>
+            </a>
             <div class="col s12">
               <table id="page-length-option" class="display">
                 <thead>

@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\AdvertisementCategory;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\UsersLikes;
@@ -12,6 +14,34 @@ use DB;
 
 class OrdersController extends Controller
 {
+    public function subscriptionPlanCreate(){
+        $advertisementCategory   = AdvertisementCategory::all();
+        return view('subscription_plan.create', ['advertisementCategory' => $advertisementCategory]); 
+    }
+
+    public function subscriptionPlanStore(Request $request)
+    {
+        $messages = array(
+            'title.required'       => 'Title field is required.',
+            'description.required' => 'Description field is required.',
+            'price.required'       => 'Price field is required.',
+            'ads.required'         => 'Number of Ads field is required.',
+        );
+
+        $request->validate([
+            'title'       => 'required',
+            'description' => 'required',
+            'price'       => 'required',
+            'ads'         => 'required',
+        ],$messages);
+
+        $params       = $request->all();
+        $params['currency_code']  = "ILS";
+        $result       = Plan::create($params);
+
+        return redirect('subscription_plan')->withSuccess('Subscription Plan successfully updated.');
+    }
+    
     public function subscriptionOrders()
     {
         $orders     = Order::with('user')->orderby('id', 'DESC')->get();
